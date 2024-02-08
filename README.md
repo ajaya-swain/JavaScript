@@ -1,2 +1,2 @@
-# JavaScript-Basics
-JavaScript Basics for Beginners
+# JavaScript
+JavaScript Basics to Advanced
