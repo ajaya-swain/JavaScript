@@ -37,12 +37,11 @@ let newDate = new Date()
 console.log(newDate);
 console.log(newDate.getMonth() + 1 ); //2 (i.e february)
 console.log(newDate.getDay()); //1 (i.e monday)
-console.log(newDate.getTime()); //
+console.log(newDate.getTime()); // 1707737186354 (Millisecond value)
 
 console.log("******************************"); 
 
-// console.log(`TODAY IS ${newDate.getDay()} AND MONTH IS ${newDate.getMonth() + 1}`); //TODAY IS 1 AND MONTH IS 2
-                  
+console.log(`TODAY IS ${newDate.getDay()} AND MONTH IS ${newDate.getMonth() + 1}`); //TODAY IS 1 AND MONTH IS 2
 
 let x = newDate.toLocaleString('default', {
     weekday: "long", 
