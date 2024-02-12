@@ -39,8 +39,8 @@ console.log(Math.round(4.6));  //5
 console.log(Math.round(4.5));  //5
 console.log(Math.round(4.4));  //4 
 
-console.log(Math.ceil(9.2));  //10 (nearest max integer to no)
-console.log(Math.floor(9.9));  //9 (nearest min integer to no)
+console.log(Math.ceil(9.2));  //10 (nearest max integer no)
+console.log(Math.floor(9.9));  //9 (nearest min integer no)
 console.log(Math.min(4, 3, 6, 8));  // 3
 console.log(Math.max(4, 3, 6, 8));  // 8
 
