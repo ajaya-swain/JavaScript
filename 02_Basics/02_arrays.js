@@ -10,7 +10,7 @@ marvel_heros.push(dc_heros)
 const allHeros = marvel_heros.concat(dc_heros) 
 // console.log(allHeros);       //['thor','Ironman','spiderman','superman','flash','batman']  
 
-// const all_new_heros = [...marvel_heros, ...dc_heros]
+const all_new_heros = [...marvel_heros, ...dc_heros]
 // console.log(all_new_heros);  //[ 'thor', 'Ironman', 'spiderman', 'superman', 'flash', 'batman' ]
 
 //***************************** */
