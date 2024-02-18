@@ -57,4 +57,31 @@ console.log(Object.entries(tinderUser)); //o/p array inside array format //[ [ '
 
 console.log(tinderUser.hasOwnProperty('isLoggedIn')); //true
 
-//***************************************** */
+//******************de-structure************************* */
+const course = {
+    courseName: "Next JS",
+    price: "999",
+    courseInstructor: "Ajaya"
+}
+
+console.log(course.courseInstructor);   //Ajaya 
+
+const {courseInstructor} = course       //destructuring the object
+console.log(courseInstructor);      //Ajaya 
+
+const {courseInstructor: x} = course  
+console.log(x);             //Ajaya 
+
+console.log("***************************");
+
+// {
+//     "name": "Ajaya",
+//     "coursename": "Next JS",        //example of JSON
+//     "price": "free"
+// }
+
+// [
+//     {},
+//     {},
+//     {}
+// ]
