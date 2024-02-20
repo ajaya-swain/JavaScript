@@ -14,3 +14,10 @@ user.username = "Aju"
 user.welcomeMessage()
 
 console.log(this);
+
+chai()
+
+const chai = function () {
+    let username = "Ajaya"
+    console.log(this.username);
+}
