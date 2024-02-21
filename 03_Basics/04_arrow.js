@@ -14,11 +14,10 @@ user.welcomeMessage()  // Ajaya , welcome to website  // {username: 'Ajaya',pric
 user.username = "Aju"
 user.welcomeMessage()  //Aju , welcome to website // {username: 'Ajaya',price: 999,welcomeMessage: [Function: welcomeMessage]}
 
-console.log(this);  // {}  //it is the window object in a browser
+console.log(this);  // {} //it is the window object in a browser  //"this" can be accessed inside object
 console.log(this);  // Window {window: Window, self: Window, document: document, name: '', location: Location, …}  
 
 //********************************************************** */
-
 
 function chai () {
     let username = "Ajaya"
