@@ -60,3 +60,19 @@ const debitCard = true
 if (userLoggedIn && debitCard && 2==2){
     console.log("Allowed to Buy Course")  //Allowed to Buy Course
 }
+
+if (userLoggedIn && debitCard && 2==9){
+    console.log("Allowed to Buy Course")  
+}else{
+    console.log("Not Allowed to Buy Course")  //Not Allowed to Buy Course
+}
+
+//************************ */
+const loggedInFromGoogle = false 
+const loggedInFromEmail = true
+
+if(loggedInFromGoogle || loggedInFromEmail) {
+    console.log("User Logged in")       //User Logged in
+}else {
+    console.log("Not Logged in")
+}
