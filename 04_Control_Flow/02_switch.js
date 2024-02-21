@@ -9,9 +9,9 @@
 // }
 
 //********** */
-const week=2
+const day=2
 
-switch (week) {
+switch (day) {
     case 1:
         console.log("Sunday")
         break;
