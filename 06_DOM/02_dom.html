@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Learning</title>
+</head>
+
+<script>
+    console.log(window);
+
+    console.log(window.document); 
+    console.log(document);
+
+    let x= document.getElementById("title")
+    console.log(x);
+    console.log(document.getElementById("title"));
+
+
+
+</script>
+<style>
+    .bg-black{
+        background-color: #212121;
+        color: #ffff;
+    }
+</style>
+
+<body class="bg-black">
+    <div >
+        <h1 id="title" class="heading">DOM Learning <span style="display: none;">New Version</span> </h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <h2 id="hello">Hello World</h2>
+
+    </div>
+</body>
+</html>
