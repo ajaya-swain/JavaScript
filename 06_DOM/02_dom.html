@@ -4,34 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM Learning</title>
+    <script>
+        console.log(window);
+    
+        console.log(window.document); 
+        console.log(document);
+    
+        //************Only works on browser console*************** */
+    
+        let x= document.getElementById("title")
+        console.log(x);
+
+        console.log(document.getElementById("title"));      //<h1 id="title" class="heading">DOM Learning <span style="display: none;">New Version</span> </h1>
+
+        console.log(document.getElementById("title").id);       //title
+        console.log(document.getElementById("title").className);    //heading
+
+        console.log(document.getElementById("title").getAttribute('id'));    //title
+        console.log(document.getElementById("title").getAttribute('class'));      //heading
+
+        console.log(title.style.backgroundColor = 'green');
+        title.style.backgroundColor = 'green';
+        title.style.borderRadius= '10px';
+
+        console.log(title);      //<h1 id="title" class="heading">DOM Learning <span style="display: none;">New Version</span> </h1>
+        title.innerHTML ;       //'DOM Learning <span style="display: none;">New Version</span>'
+        title.innerText;         //'DOM Learning'
+
+        console.log(document.querySelector("h2"));   //<h2 id="hello">Hello World</h2>
+        document.querySelector("#title");        //<h1 id="title" class="heading">DOM Learning <span style="display: none;">New Version</span> </h1>
+        document.querySelector(".heading");     //<h1 id="title" class="heading">DOM Learning <span style="display: none;">New Version</span> </h1>
+        document.querySelector("input");     //<input type="password" name="" id="">
+        document.querySelector("input[type='password']");  //<input type="password" name="" id="">
+
+        console.log(document.querySelector('ul'));       
+                                                        // <ul>
+                                                        //     <li class="list-item">one</li>
+                                                        //     <li class="list-item">two</li>
+                                                        //     <li class="list-item">three</li>
+                                                        //     <li class="list-item">four</li>
+                                                        // </ul>
+                                                           
+        // document.write(document.getElementById('ul'));
+
+        document.querySelectorAll("li");
+        const tempList = document.querySelectorAll("li");
+
+
+
+        //**************************************
+
+
+    </script>
+    
 </head>
-
-<script>
-    console.log(window);
-
-    console.log(window.document); 
-    console.log(document);
-
-    let x= document.getElementById("title")
-    console.log(x);
-    console.log(document.getElementById("title"));
-
-
-
-</script>
 <style>
-    .bg-black{
+    /* .bg-black{
         background-color: #212121;
         color: #ffff;
-    }
+    } */
 </style>
-
 <body class="bg-black">
+    
     <div >
         <h1 id="title" class="heading">DOM Learning <span style="display: none;">New Version</span> </h1>
-        <p>Lorem ipsum dolor sit amet.</p>
         <h2 id="hello">Hello World</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <input type="password" name="" id="">
+        <ul>
+            <li class="list-item">one</li>
+            <li class="list-item">two</li>
+            <li class="list-item">three</li>
+            <li class="list-item">four</li>
+        </ul>
 
     </div>
-</body>
+</body> 
 </html>
