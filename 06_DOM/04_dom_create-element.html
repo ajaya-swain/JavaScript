@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      background-color: #212121;
+      color: #ffff;
+    }
+  </style>
+  <body>
+    <h1>Do It!!</h1>
+  </body>
+  <script>
+    const element = document.createElement("h1");
+    console.log(element); //<h1></h1>
+
+    const div = document.createElement("div");
+    console.log(div); // <div></div>
+
+    div.className = "main";
+    div.id = "myid"   //<div class="main" id="myid"></div>
+
+    //******************************
+    div.id = Math.random(); //<div class="main" id="0.01525698"></div>
+    div.id = Math.random() * 10 + 1; //TO AVOID ZERO
+    div.id = Math.round(Math.random() * 10 + 1); //GIVES ROUND VALUE
+
+    div.title = "new title";      //ADDS A TITLE ATTRIBUTE
+    div.setAttribute("title", "new title");   //MOST RECOMMENDED     //ADDS A TITLE ATTRIBUTE 
+
+    div.style.backgroundColor = "green";
+    div.style.padding = "12px"; //ADDS STYLE ATTRIBUTE WITH PROPERTIES
+
+    //***************method-1***************
+
+    // div.innerText = "AJAYA"; //ADDS INNERTEXT
+    // document.body.appendChild(div)
+
+    //*******************method-2*****************
+
+    const addText = document.createTextNode("ajaya")
+    div.appendChild(addText)
+    document.body.appendChild(div)
+    
+    console.log(div);
+
+  </script>
+</html>
