@@ -2,8 +2,10 @@
 const myNumers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 const newNums = myNumers.map( (num) => { return num + 10})
+const newNums01 = myNumers.map( (num) => num + 10)
 
 console.log(newNums);  // [11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+console.log(newNums01);  // [11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
 
 //****************chaining************ */
 const newNums02 = myNumers
@@ -11,4 +13,4 @@ const newNums02 = myNumers
                 .map( (num) => num + 1)
                 .filter( (num) => num >= 40)
 
-console.log(newNums02)  //[41, 51, 61, 71, 81, 91, 101]
+console.log(newNums02)  //[41, 51, 61, 71, 81, 91, 101] 
