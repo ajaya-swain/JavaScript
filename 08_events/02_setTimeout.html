@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Do It!!</h1>
+    <button id="stop">Stop</button>
+  </body>
+  <script>
+    //  setInterval(function(){
+    //     console.log("Ajaya");     //after every 2 sec it prints "Ajaya"
+    //  }, 2000)
+
+    //******************
+    //  setTimeout(function(){
+    //     console.log("Ajaya");     //after 2 sec it wil print "Ajaya" once
+    //  }, 2000)
+
+    //*****or*****
+    // const sayAjaya = function(){
+    //     console.log("Ajaya");     
+    //  }
+    //  setTimeout(sayAjaya, 2000)    //after 2 sec it wil print "Ajaya" once
+     
+     //********************clear timeout************************
+    const changeText =  function (){
+        document.querySelector('h1').innerHTML = "best JS series"    
+    }
+    // setTimeout(changeText, 2000)  // changes the text of h1 after 2sec
+
+    const changeMe = setTimeout(changeText, 2000);
+
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearTimeout(changeMe)  //this helps to stop setTimeout functionalities. after clicking on the button
+        console.log("STOPPED");
+    })
+
+
+    //************************
+
+
+  </script>
+</html>
